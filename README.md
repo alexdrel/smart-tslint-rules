@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/alexdrel/smart-tslint-rules.svg?branch=master)](https://travis-ci.org/alexdrel/smart-tslint-rules)
-
 smart-tslint-rules
 ===
 Human-friendly tslint rules
@@ -43,10 +41,11 @@ To lint your `.ts` **and** `.tsx` files you can simply run `tslint -c tslint.jso
 Requires single or double quotes for string literals based on literal content.
 
 Configuration object may be optionally provided (defaults listed):
-```json
+```js
 {
-  default: '"'"',
-  jsx: "'\"",  // allow both single or double but not \`tagged\`
+  default: "'",
+  // allow both single or double but not \`tagged\`
+  jsx: "'\"",
   empty: "'\"",
   singleChar: "'",
   startsWithDot: "\"",
@@ -63,8 +62,18 @@ Configuration object may be optionally provided (defaults listed):
 For example, \`[true, "singleChar": "\"'" ]\` would not report a failure on the string literals
 "a" or 'a'.`,
 
+Individual rules can be enabled and configured to express preference and smooth the transitions. E.g. start with allowing both kinds of quotes for all but long words and then gradually restrict the ruleset.
+
 ### restrict-literal-concat
 Prefer template literals to string concatenation.
 
 Short literal can be allowed with setting  ```[true, { "allow-length": 5 }]```
 
+Setting ``allow-length`` to relatively high limit enables baby steps for removing '+' concatenation in a codebase.
+
+
+## Help needed
+* Documentation
+* Ideas for improvements
+* New 'smart' rules - especially ones that can be realistically applied in existing codebases
+* Tests
