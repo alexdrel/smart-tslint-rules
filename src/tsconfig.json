@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "allowJs": false,
+    "strict": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "outDir": "../rules",
+    "lib": [
+      "dom",
+      "es5",
+      "es2017",
+      "esnext"
+    ],
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  },
+  "include": [
+    "*.ts"
+  ],
+  "exclude": [
+  ]
+}

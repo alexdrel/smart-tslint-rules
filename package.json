@@ -1,0 +1,41 @@
+{
+  "name": "smart-tslint-rules",
+  "version": "0.0.1",
+  "description": "Human-friendly tslint rules",
+  "main": "smart-tslint-rules.json",
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 5.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexdrel/smart-tslint-rules.git"
+  },
+  "keywords": [
+    "tslint",
+    "typescript",
+    "tslint-rules"
+  ],
+  "author": "Alex Drel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexdrel/smart-tslint-rules/issues"
+  },
+  "homepage": "https://github.com/alexdrel/smart-tslint-rules#readme",
+  "devDependencies": {
+    "@types/node": "^10.3.0",
+    "tslint": "5.9.1",
+    "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "tsutils": "2.13.1"
+  },
+  "peerDependencies": {
+    "tslint": "^5.0.0",
+    "typescript": "^2.0.0"
+  }
+}

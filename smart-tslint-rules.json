@@ -1,0 +1,7 @@
+{
+  "rulesDirectory": "./rules",
+  "rules": {
+      "quotemark-smart": [ true ],
+      "restrict-literal-concat": [ true ]
+  }
+}
