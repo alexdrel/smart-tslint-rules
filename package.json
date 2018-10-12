@@ -1,6 +1,6 @@
 {
   "name": "smart-tslint-rules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Human-friendly tslint rules",
   "main": "smart-tslint-rules.json",
   "engines": {
@@ -27,15 +27,15 @@
   },
   "homepage": "https://github.com/alexdrel/smart-tslint-rules#readme",
   "devDependencies": {
-    "@types/node": "^10.3.0",
-    "tslint": "5.9.1",
-    "typescript": "^2.9.1"
+    "@types/node": "^10.11.7",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.0"
   },
   "dependencies": {
-    "tsutils": "2.13.1"
+    "tsutils": "^3.0.0"
   },
   "peerDependencies": {
-    "tslint": "^5.0.0",
-    "typescript": "^2.0.0"
+    "tslint": ">= 5.0.0",
+    "typescript": ">= 2.0.0"
   }
 }
